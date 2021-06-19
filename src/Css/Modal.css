@@ -1,0 +1,245 @@
+
+.popup, .popup_Email_part1, .popup_Email_part2{
+    margin: 0px auto;
+    /* padding: 50px 20px; */
+    background: #fff;
+    height: auto;
+    width: 450px;
+    position: relative;
+    outline: none;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+.close{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: #fff;    
+    box-sizing: border-box;
+}
+
+.close > img{
+    cursor: pointer;
+}
+
+.close > img:hover{
+    content: url("../Images/close_o.png");
+}
+
+.title{
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.title > h2 {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #ff440b;
+    letter-spacing: 3px;
+}
+
+.content{
+    float: left;
+    width: 100%;
+    
+    /* background: red; */
+    margin: 5px 0px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content > button{
+    text-decoration: none;
+    font-size: 18px;
+    width: 55%;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    margin: 7px 0;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: #484848;
+    background: inherit;
+    box-shadow: 4px -4px #cccccc, -2px 2px #cccccc;
+}
+
+.content > button:hover{
+    background:  #f0f0f0;
+}
+
+
+.content > button > img{
+    width: 24px;
+    margin-right: 10px;
+}
+
+.popup_login{
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin: 5px 0px;
+
+    color: #484848;
+}
+
+.popup_login > a{
+    text-decoration: none;
+    margin-left: 5px;
+    color: #FF680B;
+}
+
+.popup_login > a:hover{
+    font-weight: 500;
+    color: #ff440b;
+}
+
+.popup_footer{
+    float: left;
+    width: 100%;
+    text-align: center;
+
+    border-top: 1px solid #cccccc;
+    margin-top: 5px;
+    padding: 7px;
+    box-sizing: border-box;
+
+    color: #484848;
+}
+
+
+.popup_Email_part1, .popup_Email_part2{
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px 30px;
+    box-sizing: border-box;
+}
+
+.popup_Email_part1 > h1{
+    width: 100%;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #FF680B;
+    font-weight: normal;
+    letter-spacing: 1.5px;
+}
+
+
+.popup_Email_part1 > div:not([class="close"]){
+    float: left;
+    width: 100%;
+    margin: 5px 0px;
+}
+
+.popup_Email_part1 > div > div{
+    float: left;
+    width: 48%;
+}
+
+.popup_Email_part1 > div > div:last-child{
+    float: right;
+    width: 48%;
+}
+
+.popup_Email_part1 > div:not([class="close"]) > input, .popup_Email_part1 > div > div > input{
+    float: left;
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0px;
+    box-sizing: border-box;
+    border: 2px solid #b9b9b9;
+    border-radius: 8px;
+    outline: none;
+    font-size: 17px;
+}
+
+.popup_Email_part1 > input, .popup_Email_part2 > input{
+    
+    font-size: 1.7em;
+    padding: 16px 42px;
+
+    margin: 20px auto;
+    border-radius: 8px!important;
+
+    background: #149EB0;
+    color: white !important;
+    box-sizing: border-box;
+    box-shadow: inset 3px 3px 2px #1bc4ca, inset -4px -4px 2px #1bc4ca;
+    cursor: pointer;
+    outline: none;
+    letter-spacing: 1px;
+}
+
+.popup_Email_part1 > input:hover, .popup_Email_part2 > input:hover{
+    background: linear-gradient(120deg, #0d8a8f  0%, #149EB0 30%, #149EB0 70%, #0d8a8f 100%)!important;
+}
+
+.popup_Email_part1 > .popup_login > a, .popup_Email_part2 > .popup_login > a{
+
+    color: #149EB0;
+}
+
+
+.popup_Email_part2 > h1{
+    text-align: center;
+    width: 100%;
+    float: left;
+    padding: 15px 10px;
+    box-sizing: border-box;
+    color: #FF680B;
+    font-weight: normal;
+    font-size: 1.5em;
+    letter-spacing: 1.5px;
+}
+
+.popup_Email_part2 > span{
+    text-align: center;
+    width: 100%;
+    float: left;
+    padding: 0px 15px;
+    box-sizing: border-box;
+    color: #b9b9b9;
+  
+    letter-spacing: 1px;
+}
+
+.popup_Email_part2 > div:not([class="close"]){
+    float: left;
+    width: 100%;
+    padding: 20px 30px 15px 30px;
+    box-sizing: border-box;
+}
+
+.popup_Email_part2 > div > input:first-child{
+    float: left;
+    width: 20%;
+    padding: 8px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    border: 2px solid #b9b9b9;
+    border-radius: 8px;
+    outline: none;
+    font-size: 17px;
+}
+
+.popup_Email_part2 > div > input:last-child{
+    float: right;
+    width: 70%;
+    padding: 8px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    border: 2px solid #b9b9b9;
+    border-radius: 8px;
+    outline: none;
+    font-size: 17px;
+}

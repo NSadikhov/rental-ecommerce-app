@@ -1,0 +1,154 @@
+.mobileNavigation{
+    height: auto;
+    background: white;
+    position: fixed;
+    z-index: 1200;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 0px 7px rgba(0, 0, 0, 0.325)
+  }
+
+
+  .navigationAction{
+    padding: unset !important;
+  }
+
+  .navigationActionMiddleIcon{
+    font-size: 2.5rem !important;
+  }
+
+  .navigationAction.Mui-selected {
+      color: #FF6600 !important;
+  }
+
+  .mobile_profileBtn_img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 1px 3px #6d6d6d;
+
+  }
+
+  .mobileNavigation_accountOptions{
+    position: absolute;
+    right: 7.5px;
+    bottom: 70px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobileNavigation_accountOptions > button{
+    margin-top: 10px;
+    background: white;
+    outline: none;
+    border-radius: 8px;
+    padding: 7.5px 10px;
+    box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.377);
+    animation-name: accountOptions;
+    animation-timing-function: ease-out;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .mobileNavigation_accountOptions > button > svg{
+    color: #FF6600 !important;
+    margin-right: 10px;
+  }
+
+  .mobileNavigation_accountOptions > button:first-of-type{
+    margin-top: 0;
+  }
+
+  .mobileNavigation_accountOptions > button:nth-of-type(1){
+    animation-duration: 0.3s;
+  }
+
+  .mobileNavigation_accountOptions > button:nth-of-type(2){
+    animation-duration: 0.4s;
+  }
+
+  .mobileNavigation_accountOptions > button:nth-of-type(3){
+    animation-duration: 0.5s;
+  }
+
+  .mobileNavigation_accountOptions > button:nth-of-type(4){
+    animation-duration: 0.6s;
+  }
+
+  @keyframes accountOptions {
+    from {transform: translateX(145px);}
+    to {transform: translateX(0px);}
+  }
+
+
+.mobileNavigation_rentOptions{
+  position: absolute;
+  left: calc(100% / 2 - 68.485px);
+  bottom: 70px;
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.mobileNavigation_rentOptions > button{
+  margin-bottom: 10px;
+  background: white;
+  outline: none;
+  border-radius: 5px;
+  
+  box-shadow: 0px 1px 4px 0px rgb(80, 80, 80);
+
+  animation-duration: 0.4s;
+  animation-timing-function: ease-out;
+  
+}
+
+.mobileNavigation_rentOptions > button:last-of-type{
+  margin-bottom: 0;
+}
+
+.mobileNavigation_rentOptions > button:nth-of-type(1){
+  animation-name: rentOptions_left;
+  font-size: 1.2rem;
+  padding: 10px 17.5px;
+  background: #f33d36;
+  color: white;
+}
+
+.mobileNavigation_rentOptions > button:nth-of-type(2){
+  animation-name: rentOptions_right;
+  padding: 7.5px 10px;
+  width: fit-content;
+  font-size: 1rem;
+}
+
+@keyframes rentOptions_left {
+
+  0% {
+    transform: translate(0px, 50px);
+    /* border-radius: 50%; */
+  }
+  100% {
+    transform: translate(0px, 0px);
+    /* border-radius: 8px; */
+  }
+
+}
+
+@keyframes rentOptions_right {
+
+  0% {
+    transform: translate(0px, 50px);
+    /* border-radius: 50%; */
+  }
+  100% {
+    transform: translate(0px, 0px);
+    /* border-radius: 8px; */
+  }
+
+}

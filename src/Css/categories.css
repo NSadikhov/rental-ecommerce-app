@@ -1,0 +1,299 @@
+
+.wallpaper_categories {
+    /* float: left; */
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    object-fit: cover;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.7);
+    margin-top: 80px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.WP-photo{
+    background-image: url("../Images/photografia1500x500.jpg");
+}
+/* .WP-drone{
+    background-image: url("../Images/DronYeni.jpg");
+}
+.WP-scooter{
+    background-image: url("../Images/scooter.jpg");
+}
+.WP-tools{
+    background-image: url("../Images/tools.jpg");
+} */
+.WP-game{
+    background-image: url("../Images/videoGames1500x500.jpg");
+}
+/* .WP-fitness{
+    background-image: url("../Images/fitness.jpg");
+}
+.WP-music{
+    background-image: url("../Images/music.jpg");
+}
+.WP-home{
+    background-image: url("../Images/home.jpg");
+}
+.WP-travel{
+    background-image: url("../Images/travel.jpg");
+} */
+.WP-books{
+    background-image: url("../Images/books1500x500.jpg");
+}
+.WP-board-games{
+    background-image: url("../Images/boardGames1500x500.jpg");
+}
+/* .WP-bicycle{
+    background-image: url("../Images/bicycle.jpg");
+} */
+.WP-technology{
+    background-image: url("../Images/electronics1500x500.jpg");
+}
+/* .WP-drawing{
+    background-image: url("../Images/hobby.jpg");
+}
+.WP-equipment{
+    background-image: url("../Images/equipment.jpg");
+}
+.WP-service{
+    background-image: url("../Images/service.jpg");
+}
+.WP-kid_stroller{
+    background-image: url("../Images/kid_stroller.jpg");
+} */
+
+.searchBar_categories{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    justify-content: center;
+    gap: 1.5rem;
+    /* margin: 30px 0 0.25rem 0; */
+}
+
+.categories_search_btnBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.categories_search_btnBox > button{
+    width: 225px;
+}
+
+.header_filter{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_filter > div{
+    display: inline-flex;
+}
+
+.header_filter_headerBox{
+    align-items: center;
+}
+
+.header_filter_headerBox > img{
+    margin-right: 12px;
+    width: 60px;
+}
+
+.header_filter_headerBox > h2{
+    font-size: 1.5rem;
+}
+
+.searchBar_categories_SearchFilterBtn {
+    height: 56px !important;
+    width: 56px !important;
+}
+
+
+
+
+.categoriesHeader_txt{
+    display: inline;
+    color: #FF6600;
+    letter-spacing: 1.5px;
+    font-size: 2rem;
+}
+
+.filterInput{
+    width: 20ch;
+}
+
+.categoriesRentalsBox{
+    width: 100%;
+    padding: 20px 0 20px 0;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.categoriesRentals{
+    /* float: left; */
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding-bottom: 10px;
+}
+
+.categoriesRentals > * {
+    letter-spacing: 0.8px;
+}
+
+
+
+.categoryCard{
+    cursor: pointer;
+    border-radius: 7px !important;
+}
+
+.categoryCard:hover{
+    box-shadow: 0px 0px 2px #212121 !important;
+}
+
+.categoryImgDiv{
+    padding: 5px;
+}
+
+.categoryCardImg{
+    object-fit: cover;
+    height: 120px;
+    border-radius: 6px;
+}
+
+.categoryContentDiv{
+    padding: 5px 5px 5px 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product_name{
+    color: #5e5d5d;
+}
+
+.categoryRating{
+    margin: 5px 0 10px -3px;
+}
+
+
+@media (max-width: 950px) {
+    .wallpaper_categories {
+        height: 300px;
+    }
+
+    .WP-game{
+        background-image: url("../Images/videoGames950x450.jpg");
+    }
+    .WP-photo{
+        background-image: url("../Images/photografia950x350.jpg");
+    }
+    .WP-board-games{
+        background-image: url("../Images/boardGames950x450.jpg");
+    }
+    .WP-books{
+        background-image: url("../Images/books950x350.jpg");
+    }
+    .WP-technology{
+        background-image: url("../Images/electronics950x350.jpg");
+    }
+}
+
+@media (max-width: 700px) {
+
+    .wallpaper_categories {
+        height: 250px;
+    }
+
+    .WP-game{
+        background-image: url("../Images/videoGames700x300.jpg");
+    }
+    .WP-photo{
+        background-image: url("../Images/photografia700x300.jpg");
+    }
+    .WP-board-games{
+        background-image: url("../Images/boardGames700x300.jpg");
+    }
+    .WP-books{
+        background-image: url("../Images/books700x300.jpg");
+    }
+    .WP-technology{
+        background-image: url("../Images/electronics700x300.jpg");
+    }
+}
+
+
+
+@media (max-width: 599px) {
+
+    .searchBar_categories{
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    }
+    .searchBar_categories_SearchBox{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+     }
+
+     
+    
+}
+
+@media (max-width: 550px) {
+    .header_filter_headerBox > img{
+        width: 45px;
+    }
+    .header_filter_headerBox > h2{
+        font-size: 1.2rem;
+    }
+
+    .wallpaper_categories {
+        height: 250px;
+    }
+
+    .filterInput{
+        width: 17ch;
+    }
+
+    .filterInputInside{
+        font-size: 0.9rem !important;
+    }
+}
+
+@media (max-width: 450px) {
+    .wallpaper_categories {
+        height: 225px;
+    }
+
+    .WP-game{
+        background-image: url("../Images/videoGames450x250.jpg");
+    }
+    .WP-photo{
+        background-image: url("../Images/photografia450x250.jpg");
+    }
+    .WP-board-games{
+        background-image: url("../Images/boardGames450x250.jpg");
+    }
+    .WP-books{
+        background-image: url("../Images/books450x250.jpg");
+    }
+    .WP-technology{
+        background-image: url("../Images/electronics450x250.jpg");
+    }
+}
+
+@media (max-width: 400px) {
+    .wallpaper_categories {
+        height: 200px;
+    }
+}

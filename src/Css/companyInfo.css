@@ -1,0 +1,114 @@
+.CompanyInfoContent{
+    width: 100%;
+    margin-top: 80px;
+    padding: 30px 0;
+    padding-top: 15px;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.CompanyInfoContent_header{
+    margin: auto;
+    font-size: 1.8rem;
+    color:#FF6600;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 2px solid #FF6600;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    padding-bottom: 15px;
+    /* width: fit-content; */
+    text-align: center;
+}
+
+.CompanyInfoContent_inside{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.CompanyInfoContent_img{
+    width: 40%;
+    margin-bottom: 15px;
+}
+
+.CompanyInfoContent_paragraph_AboutUs{
+   
+    width: 80ch;
+    text-align: center;
+    font-size: 1rem;
+    cursor: default;
+}
+
+.CompanyInfoContent_paragraph_AboutUs::first-letter{
+    font-size: 2rem;
+    color: #FF6600;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.CompanyInfoContent_paragraph_Contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: default;
+}
+
+.CompanyInfoContent_paragraph_Contact > span {
+    letter-spacing: 1.5px;
+}
+
+.CompanyInfoContent_paragraph_Contact > span:first-of-type {
+    margin-bottom: 5px;
+}
+
+
+.CompanyInfoContent_paragraph_Career{
+    font-size: 1rem;
+}
+
+@media (max-width: 900px) {
+    .CompanyInfoContent_paragraph_AboutUs{
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 750px) {
+    .CompanyInfoContent_paragraph_AboutUs{
+        width: 60ch;
+    }
+    .CompanyInfoContent_img{
+        width: 65%;
+    }
+}
+
+@media (max-width: 600px) {
+    .CompanyInfoContent_paragraph_AboutUs{
+        width: 45ch;
+    }
+    .CompanyInfoContent_header{
+        font-size: 1.5rem;
+    }
+
+    .CompanyInfoContent_paragraph_AboutUs::first-letter{
+        font-size: 1.5rem;
+    }
+
+    .CompanyInfoContent_paragraph_Career{
+        font-size: 0.9rem;
+    }
+    
+    
+}
+
+@media (max-width: 500px) {
+    .CompanyInfoContent_paragraph_AboutUs{
+        width: 95%;
+    }
+}
+
+@media (max-width: 370px) {
+    .CompanyInfoContent_paragraph_AboutUs{
+        font-size: 0.85rem;
+    }
+}
