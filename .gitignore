@@ -34,6 +34,6 @@ firestore.rules
 storage.rules
 /public/firebase-messaging-sw.js
 /src/sitemap-generator.js
-src/Images
+# src/Images
 src/Context
 src/util/Agreement-sample.docx
